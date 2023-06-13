@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achados e perdidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="LoginAndRegistrationForm">
+            <h1 id="formTitle">Administrador</h1>
+            <div id="formSwitchBtn">
+                <button onclick="ShowLoginForm()" id="ShowLoginBtn" class="active">Administrador</button>
+                <button onclick="ShowRegistrationForm()" id="ShowUsuárioBtn">Usuário</button>
+            </div>
+            <div id="LoginForm">
+                <form action="#">
+                    <div class="center">
+                        <input id="LoginEmail" class="input-text" type="text" placeholder="E-mail">
+                        <input id="LoginPassword" class="mt-10 input-text" type="password" placeholder="Senha">
+                    </div>
+
+                    <div class="forgot-pass-remember-me mt-10">
+                        <div class="forgot-pass">
+                            <a id="ForgotPassword" href="#">Esqueceu sua senha?</a>
+                        </div>
+                        <div class="remember-me">
+                            <input id="rememberMe" type="checkbox">
+                            <label for="rememberMe">Lembre de mim</label>
+                        </div>
+                    </div>
+
+                    <div class="center mt-20">
+                        <input class="Submit-Btn" type="submit" value="Login" id="LoginBtn">
+                    </div>
+                    </form>
+                    <p class="center mt-20 dont-have-account">
+                        Não tem conta?
+                        <a href="#">Se escreve agora</a>
+                    </p>
+            </div>
+            <div id="AchadosePerdidosForm">
+                <form action="#">
+                    <div class="center">
+                        <input id="Name" class="input-text" type="text" placeholder="Nome Completo">
+                        <input id="Email" class="input-text mt-10"  type="email" placeholder="E-mail">
+                        <input id="Pass" class="mt-10 input-text" type="password" placeholder="Senha">
+                        <input id="ConfirmPass" class="mt-10 input-text" type="password" placeholder="Confirmar Senha">
+                    </div>
+                    <div class="center mt-20">
+                        <input onclick="return" ValidateRegistrationForm(); class="Submit-Btn" type="submit" value="Registration" id="RegistrationBtn">
+                    </div>
+                </form>
+                <p class="center mt-20 alreay-have-account">
+                    Já tem uma conta?
+                    <a href="#" onclick="ShowLoginForm()">Login</a>
+                </p>
+            </div>
+            <div id="ForgotPasswordForm">
+                <form>
+                    <div class="center mt-20">
+                        <input class="input-text" type="text" id="fogotPassEmail" placeholder="Email">
+                    </div>
+                </form>
+                <p class="center mt-20 already-have-account">
+                    Voltar
+                    <a href="JavaScript:void(0);" onclick="ShowLoginForm()">Página de login</a> | <a href="JavaScript:void(0);" onclick="ShowRegistrationForm()">Registration page</a>
+                </p>
+            </div>
+            </div>
+            <p style="text-align: center;"><a style="text-decoration: none; color: #006000; font-weight: bolder;" href="">Mais </a></p>
+        </div>
+        <img src="logo1.jpeg" alt="Imagem Local"/>
+        <br>
+        <h3>objetivo prestar um apoio e fazer a 
+            gestão dos objetos “Achados e Perdidos” pelas pessoas que transitam na instituição. 
+            Muitos itens são esquecidos pelas pessoas, principalmente alunos.<br>
+            Portanto, o intuito do Achados e Perdidos é contribuir para que as pessoas recuperem os seus itens extraviados.<br> 
+            Com uma gestão informatizada, o setor possui um controle efetivo; 
+            assegura uma diminuição da quantidade dos objetos extraviados na instituição; 
+            um espaço menor para o armazenamento é requerido e a entrega é feita, de fato, 
+            para o dono.<br>
+            A instituição dispõe de um aplicativo (App) que coleta e armazena as informações da pessoa (extraviador), 
+            gerando um banco de dados suficiente para uma correta rastreabilidade; gestão do tempo de armazenamento e 
+            assertividade na entrega.<br>
+            O App é de fácil interação com o usuário e útil durante a sua interação e permanência na instituição.
+            Desejamos que usufrua do melhor que a instituição Unisenai SC tem a oferecer a você e que tenhas sucesso no encontro de seu(s) item(ns).<br></h3>
+    </div>  
+    <script src="main.js" type="text/JavaScript"></script>
+    <script src="validation.js" type="text/JavaScript"></script> 
+</body>
+</html>
